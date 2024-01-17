@@ -236,13 +236,25 @@ font-weight: 800;
     transform: translate(-45%, -50%);
     z-index: 2;
 }
-.popular-toure-image, .perfect-place-image{
+.popular-toure-image{
           max-width: 100%;
           width: 540px;
           height: 500px;
           border-radius: 16px;
           object-fit: cover;
           object-position: bottom;
+}
+.perfect-place-image{
+    max-width: 100%;
+    width: 540px;
+    height: 500px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: bottom;
+}
+video{
+    width:540px;
+    border-radius: 1rem;
 }
 .Newsletter-desc{
     width: 474px;
@@ -273,7 +285,10 @@ font-weight: 800;
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
-    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    border: 2px solid blue;
 }
 
 .discount-container{
@@ -281,15 +296,13 @@ font-weight: 800;
     flex-direction: column;
     width: 300px;
     height: 90px;
-    max-width:324px;
-    max-height: 120px;
-    transform: rotate(-19.628deg) translateY(330px) translateX(20%);
+    transform: rotate(-19.628deg);
     border-radius: 16px;
     background: #FF5400;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute;
+    margin-bottom: 2.50rem;
 }
 .web-tittle{
     color: #FFF;
@@ -517,14 +530,14 @@ z-index: 3;
     .banner-container{
         width: 90%;
     }
-/*------------------Popular Tour Section--------------*/
+/*------------------Popular Tour, Perfect place & Newsletter Section--------------*/
 
     .popular-toure-container, .perfect-place-container, .Newsletter-container{
         flex-direction: column;
         gap: 2rem;
         margin-top: 2rem;
     }
-    .popular-toure-desc, .perfect-place-desc, .Newsletter-desc{
+    .popular-toure-desc, .perfect-place-desc{
         width: 90%;
         max-width: 90%;
     }
@@ -536,8 +549,12 @@ z-index: 3;
         padding: 1rem 0rem;
         word-wrap: break-word;
     }
-    .popular-toure-image-container, .perfect-place-image-container, .newsletter-image-container{
+    .popular-toure-image-container, .perfect-place-image-container{
         width: 90%;
+    }
+    .newsletter-image-container, .Newsletter-desc{
+        max-width: 90%;
+        position: relative;
     }
     .popular-toure-image-container img, .perfect-place-image-container img, .newsletter-image-container img{
         width: 100%;
@@ -547,6 +564,10 @@ z-index: 3;
         max-width: 100%;
         width: 488px;
         height: 52px;
+    }
+    video{
+        width:96%;
+        border-radius: 1rem;
     }
     /*-------------Choose Your Destination-----------*/
     .choose-destination-container{
@@ -576,19 +597,7 @@ z-index: 3;
         width: 90%;
         margin: 0 auto;
     }
-    .discount-container{
-        display:flex;
-        flex-direction: column;
-        width: 214px;
-        height: 80px;
-        transform: rotate(-19.628deg) translateY(385px) translateX(80%);
-        border-radius: 16px;
-        background: #FF5400;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: absolute;
-    }
+    
     .web-tittle{
         color: #FFF;
     
