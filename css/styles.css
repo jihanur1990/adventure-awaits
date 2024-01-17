@@ -224,7 +224,7 @@ font-weight: 800;
     position: relative;
 }
 
-.text-over-image-2{
+.text-over-image-perfect{
     color: #FFF;
     text-align: center;
     font-family: Mulish;
@@ -235,7 +235,7 @@ font-weight: 800;
     top: 50%;
     transform: translate(-45%, -50%);
     z-index: 2;
-    }
+}
 .popular-toure-image, .perfect-place-image{
           max-width: 100%;
           width: 540px;
