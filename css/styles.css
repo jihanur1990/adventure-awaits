@@ -231,9 +231,9 @@ font-weight: 800;
     font-size: 28px;
     position: absolute;
     font-weight: 800;
-    left: 50%;
+    left: 45%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-45%, -50%);
     z-index: 2;
     }
 .popular-toure-image, .perfect-place-image{
@@ -367,7 +367,7 @@ font-weight: 800;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-z-index: 2;
+z-index: 3;
 }
 
 /*-------------Why Choose us section-----------*/
