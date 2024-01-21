@@ -71,7 +71,7 @@ font-weight: 800;
 .logo-tittle-style{
     color: #FF5400;
     font-family: Mulish;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -383,19 +383,17 @@ transform: translate(-50%, -50%);
 z-index: 3;
 }
 
-/*-------------Why Choose us section-----------*/
-.why-choose-us-container{
+/*-------------Why Choose us & Deals-Discount section-----------*/
+.why-choose-us-container, .deals-discount-container{
     width: 96%;
     max-width: 1170px;
     margin: 3.25rem auto;
 }
-.why-choose-us-tittle-container{
+.why-choose-us-tittle-container, .deals-discount-tittle-container{
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.why-choose-us-tittle-container .p-tag{
-    padding: 1rem 0;
-}
+
 .why-choose-us-details-container{
     width: 100%;
     display: flex;
@@ -404,6 +402,11 @@ z-index: 3;
     gap: 1.5rem;
    
 }
+
+.why-choose-us-tittle-container .p-tag{
+    padding: 1rem 0;
+}
+
 .why-choose-us-sub-section-1{
     width: 48%;
     border-radius: 16px;
@@ -433,7 +436,70 @@ z-index: 3;
 .why-choose-us-details-container, .p-tag{
     padding-top: 0.75rem;
 }
+.deals-discount-body-container{
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+.deals-discount-details-container-1, .deals-discount-details-container-3{
+    background: url(../images/Group\ 39.png),lightgray 50% / cover no-repeat;
+    width: 100%;
+    max-width: 1170px;
+    height: calc(1000px / 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+.deals-discount-details-container-2{
+    background: url(../images/Group\ 40.png),lightgray 50% / cover no-repeat;
+    width: 100%;
+    max-width: 1170px;
+    height: calc(1000px / 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
 
+.deals-discount-sub-section{
+    width: 50%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3rem;
+}
+.offers-heading{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.visiting-Schedule, .person-quantity, .destination{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.offers-details .sub-section-tittle{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.price{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 1rem 0 1.5rem;
+}
+
+
+/*---------------------- Footer section---------------------*/
 .footer-container{
     background: rgba(19, 19, 24, 0.05);
     margin-top: 2.5rem;
@@ -479,9 +545,9 @@ z-index: 3;
 
 
 
-/*----------Mobile View-----------------*/
+/*-------------------------------------Mobile View----------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     /*---------Nav Section-------*/
     .nav-bar{
@@ -533,16 +599,17 @@ z-index: 3;
 /*------------------Popular Tour, Perfect place & Newsletter Section--------------*/
 
     .popular-toure-container, .perfect-place-container, .Newsletter-container{
+        width: 90%;
         flex-direction: column;
         gap: 2rem;
-        margin-top: 2rem;
+        margin-top: 2rem auto 0px; 
     }
     .popular-toure-desc, .perfect-place-desc{
         width: 90%;
         max-width: 90%;
     }
-    .section-tittle{
-        font-size: 2.25rem;
+    .section-tittle, .sub-section-tittle{
+        font-size: 1.25rem;
     }
     .p-tag{
         font-size: .80rem;
@@ -552,9 +619,14 @@ z-index: 3;
     .popular-toure-image-container, .perfect-place-image-container{
         width: 90%;
     }
-    .newsletter-image-container, .Newsletter-desc{
+    .newsletter-image-container{
         max-width: 90%;
         position: relative;
+    }
+    .Newsletter-desc{
+        max-width: 90%;
+        position: relative;
+        padding: 1.5rem auto;
     }
     .popular-toure-image-container img, .perfect-place-image-container img, .newsletter-image-container img{
         width: 100%;
@@ -588,7 +660,7 @@ z-index: 3;
         grid-column: 1 / span 12;
     }
 
-     /*-------------Why Choose Us-----------*/
+     /*-------------Why Choose Us & Deals-Discount Section-----------*/
 
     .why-choose-us-details-container{
         flex-direction: column;
@@ -615,5 +687,51 @@ z-index: 3;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    }
+    .deals-discount-tittle-container{
+        text-wrap: wrap;
+    }
+    .deals-discount-details-container-1, .deals-discount-details-container-2, .deals-discount-details-container-3{
+        width: 90%;
+        margin: 0 auto; 
+        justify-content: center !important;  
+        align-items: flex-end !important;
+        padding: 1rem !important;
+    }
+    .deals-discount-sub-section{
+        width: fit-content;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        padding: 1.5rem;
+    }
+    .why-choose-us-container, .deals-discount-container{
+        width: 90%;
+    }
+
+    /*-------------------Footer Section--------------*/
+    .footer-container{
+        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .footer-logo-img{
+        width: 5rem;
+        height: 5.25rem;
+    }
+    .footer-logo-img{
+        width: 20px;
+        height: 20px;
+    }
+    .footer-tittle-section .logo-tittle, .footer-tittle-section .logo-tittle-style{
+        font-size: 20px;
+    }
+    .icon-container{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .copy-right{
+        margin-top: 1.5rem;
     }
 }
